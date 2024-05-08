@@ -275,7 +275,7 @@ def VGV(event):
     FondoV.place(relheight=1,relwidth=1)
     ###################################
     FrameAn = tk.Frame(FondoV,bg='green3')
-    FrameAn.place(relwidth=1,height=200)
+    FrameAn.place(relwidth=1,height=200
 
     LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Comic Sans MS', 25))
     LRaza.place(relx=.1,rely=.3)
