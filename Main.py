@@ -11,7 +11,7 @@ def VGanado():
     ##########################################
     FrameHead = tk.Frame(fondo, bg='green3')
     FrameHead.place(x=0, y=0, relwidth=1, height=60)
-    FPL = tk.Label(FrameHead, text='Ganado de  la Granja Ucundinamarca', font=('Great Vibes', 25), bg='green3', fg='white')
+    FPL = tk.Label(FrameHead, text='Ganado de  la Granja Ucundinamarca', font=('Comic Sans MS', 25), bg='green3', fg='white')
     FPL.place(x=20, y=20)
     ######################
     Banner = Image.open('imagenes/banner_ganado.png')
@@ -30,7 +30,7 @@ def VGanado():
     Vaca = ImageTk.PhotoImage(Vaca)
     Esp1L = tk.Frame(FrameEs,bg='azure')
     Esp1L.place(x=20,y=20,relwidth=.45,height=100)
-    EsvL = tk.Label(Esp1L,text='Bovinos', font=('Great Vibes', 40),bg='azure')
+    EsvL = tk.Label(Esp1L,text='Bovinos', font=('Comic Sans MS', 40),bg='azure')
     EsvL.place(relx=.3,y=20)
     Esv = tk.Label(Esp1L, image=Vaca,bg='azure')
     Esv.place(relx=.85,y=0,relheight=1,width=100)
@@ -43,7 +43,7 @@ def VGanado():
     Cerdo = ImageTk.PhotoImage(Cerdo)
     Esp2L = tk.Frame(FrameEs,bg='azure')
     Esp2L.place(x=20,y=200,relwidth=.45,height=100)
-    EscL = tk.Label(Esp2L,text='Porcinos', font=('Great Vibes', 40),bg='azure')
+    EscL = tk.Label(Esp2L,text='Porcinos', font=('Comic Sans MS', 40),bg='azure')
     EscL.place(relx=.3,y=20)
     Esc = tk.Label(Esp2L, image=Cerdo,bg='azure')
     Esc.place(relx=.85,y=0,relheight=1,width=100)
@@ -56,7 +56,7 @@ def VGanado():
     Cabra = ImageTk.PhotoImage(Cabra)
     Esp3L = tk.Frame(FrameEs,bg='azure')
     Esp3L.place(relx=.5,y=200,relwidth=.45,height=100)
-    EscaL = tk.Label(Esp3L,text='Caprinos', font=('Great Vibes', 40),bg='azure')
+    EscaL = tk.Label(Esp3L,text='Caprinos', font=('Comic Sans MS', 40),bg='azure')
     EscaL.place(relx=.3,y=20)
     Esca = tk.Label(Esp3L, image=Cabra,bg='azure')
     Esca.place(relx=.85,y=0,relheight=1,width=100)
@@ -69,7 +69,7 @@ def VGanado():
     Gall = ImageTk.PhotoImage(Gall)
     Esp5L = tk.Frame(FrameEs,bg='azure')
     Esp5L.place(relx=.5,y=20,relwidth=.45,height=100)
-    EsgL = tk.Label(Esp5L,text='Avicultura', font=('Great Vibes', 40),bg='azure')
+    EsgL = tk.Label(Esp5L,text='Avicultura', font=('Comic Sans MS', 40),bg='azure')
     EsgL.place(relx=.3,y=20)
     Esg = tk.Label(Esp5L, image=Gall,bg='azure')
     Esg.place(relx=.85,y=0,relheight=1,width=100)
@@ -112,23 +112,23 @@ def VGV(event):
                             if row[0]=='Pardo suizo':
                                 a=a+1
                 if s>0:
-                    F1 = tk.Button(FrameRaza,text='Holstein',bg='azure',font=('Great Vibes', 15))
+                    F1 = tk.Button(FrameRaza,text='Holstein',bg='azure',font=('Comic Sans MS', 15))
                     F1.place(rely=.03,x=50,relwidth=.8,height=80)
                     F1.bind("<Button-1>", MostrarV0)
                 if z>0: 
-                    F2 = tk.Button(FrameRaza,text='Gyr',font=('Great Vibes', 15),bg='azure')
+                    F2 = tk.Button(FrameRaza,text='Gyr',font=('Comic Sans MS', 15),bg='azure')
                     F2.place(rely=.23,x=50,relwidth=.8,height=80)
                     F2.bind("<Button-1>", MostrarV1)
                 if c>0:
-                    F3 = tk.Button(FrameRaza,text='Jersey',font=('Great Vibes', 15),bg='azure')
+                    F3 = tk.Button(FrameRaza,text='Jersey',font=('Comic Sans MS', 15),bg='azure')
                     F3.place(rely=.43,x=50,relwidth=.8,height=80)
                     F3.bind("<Button-1>", MostrarV2)
                 if d>0:
-                    F4 = tk.Button(FrameRaza,text='Normando',font=('Great Vibes', 15),bg='azure')
+                    F4 = tk.Button(FrameRaza,text='Normando',font=('Comic Sans MS', 15),bg='azure')
                     F4.place(rely=.63,x=50,relwidth=.8,height=80)
                     F4.bind("<Button-1>", MostrarV3)
                 if a>0:
-                    F5 = tk.Button(FrameRaza,text='Pardo suizo',font=('Great Vibes', 15),bg='azure')
+                    F5 = tk.Button(FrameRaza,text='Pardo suizo',font=('Comic Sans MS', 15),bg='azure')
                     F5.place(rely=.83,x=50,relwidth=.8,height=80)
                     F5.bind("<Button-1>", MostrarV4)
     
@@ -277,33 +277,33 @@ def VGV(event):
     FrameAn = tk.Frame(FondoV,bg='green3')
     FrameAn.place(relwidth=1,height=200)
 
-    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Great Vibes', 25))
+    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Comic Sans MS', 25))
     LRaza.place(relx=.1,rely=.3)
-    CoRaza = ttk.Combobox(FrameAn, values=['Holstein','Gyr','Jersey','Normando','Pardo suizo'],font=('Great Vibes', 25))
+    CoRaza = ttk.Combobox(FrameAn, values=['Holstein','Gyr','Jersey','Normando','Pardo suizo'],font=('Comic Sans MS', 25))
     CoRaza.place(relx=.1,rely=.5,width=200)
 
-    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Great Vibes', 25))
+    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Comic Sans MS', 25))
     LEdad.place(relx=.3,rely=.3)
-    InEdad = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InEdad = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InEdad.place(relx=.3,rely=.5,width=100)
 
-    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Great Vibes', 25))
+    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Comic Sans MS', 25))
     LPeso.place(relx=.5,rely=.3)
-    InPeso = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InPeso = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InPeso.place(relx=.5,rely=.5,width=100)
 
-    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Great Vibes', 25))
+    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Comic Sans MS', 25))
     LNum.place(relx=.7,rely=.3)
-    InNum = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InNum = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InNum.place(relx=.7,rely=.5,width=200)
     
-    BtnA = tk.Button(FrameAn, text='Agregar',font=('Great Vibes', 15),bg='azure',command=AnadirV)
+    BtnA = tk.Button(FrameAn, text='Agregar',font=('Comic Sans MS', 15),bg='azure',command=AnadirV)
     BtnA.place(relx=.87,rely=.15,)
-    BtnM = tk.Button(FrameAn, text='Modificar',font=('Great Vibes', 15),bg='azure')
+    BtnM = tk.Button(FrameAn, text='Modificar',font=('Comic Sans MS', 15),bg='azure')
     BtnM.place(relx=.87,rely=.4,)
-    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Great Vibes', 15),bg='azure')
+    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Comic Sans MS', 15),bg='azure')
     BtnE.place(relx=.87,rely=.7)
-    BtnAt = tk.Button(FrameAn,text='Atras',font=('Great Vibes', 15),bg='azure',command=AtrasV)
+    BtnAt = tk.Button(FrameAn,text='Atras',font=('Comic Sans MS', 15),bg='azure',command=AtrasV)
     BtnAt.place(relx=.01,rely=.1)
     ###################################
     FrameRaza = tk.Frame(FondoV,bg='light gray')
@@ -445,15 +445,15 @@ def VGC(event):
                             if row[0]=='Casco de Mula':
                                 c=c+1
                 if s>0:
-                    F1 = tk.Button(FrameRaza,text='San Pedreño',bg='azure',font=('Great Vibes', 15))
+                    F1 = tk.Button(FrameRaza,text='San Pedreño',bg='azure',font=('Comic Sans MS', 15))
                     F1.place(rely=.1,x=50,relwidth=.8,height=80)
                     F1.bind("<Button-1>", MostrarV0)
                 if z>0: 
-                    F2 = tk.Button(FrameRaza,text='Zungo',font=('Great Vibes', 15),bg='azure')
+                    F2 = tk.Button(FrameRaza,text='Zungo',font=('Comic Sans MS', 15),bg='azure')
                     F2.place(rely=.4,x=50,relwidth=.8,height=80)
                     F2.bind("<Button-1>", MostrarV1)
                 if c>0:
-                    F3 = tk.Button(FrameRaza,text='Casco de Mula',font=('Great Vibes', 15),bg='azure')
+                    F3 = tk.Button(FrameRaza,text='Casco de Mula',font=('Comic Sans MS', 15),bg='azure')
                     F3.place(rely=.7,x=50,relwidth=.8,height=80)
                     F3.bind("<Button-1>", MostrarV2)
     global FondoC
@@ -465,33 +465,33 @@ def VGC(event):
     FrameAn = tk.Frame(FondoC,bg='green3')
     FrameAn.place(relwidth=1,height=200)
 
-    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Great Vibes', 25))
+    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Comic Sans MS', 25))
     LRaza.place(relx=.1,rely=.3)
-    CoRaza = ttk.Combobox(FrameAn, values=['San Pedreño','Zungo','Casco de Mula'],font=('Great Vibes', 25))
+    CoRaza = ttk.Combobox(FrameAn, values=['San Pedreño','Zungo','Casco de Mula'],font=('Comic Sans MS', 25))
     CoRaza.place(relx=.1,rely=.5,width=200)
 
-    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Great Vibes', 25))
+    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Comic Sans MS', 25))
     LEdad.place(relx=.3,rely=.3)
-    InEdad = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InEdad = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InEdad.place(relx=.3,rely=.5,width=100)
 
-    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Great Vibes', 25))
+    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Comic Sans MS', 25))
     LPeso.place(relx=.5,rely=.3)
-    InPeso = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InPeso = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InPeso.place(relx=.5,rely=.5,width=100)
 
-    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Great Vibes', 25))
+    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Comic Sans MS', 25))
     LNum.place(relx=.7,rely=.3)
-    InNum = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InNum = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InNum.place(relx=.7,rely=.5,width=200)
     
-    BtnA = tk.Button(FrameAn, text='Agregar',font=('Great Vibes', 15),bg='azure',command=AnadirCe)
+    BtnA = tk.Button(FrameAn, text='Agregar',font=('Comic Sans MS', 15),bg='azure',command=AnadirCe)
     BtnA.place(relx=.87,rely=.15,)
-    BtnM = tk.Button(FrameAn, text='Modificar',font=('Great Vibes', 15),bg='azure')
+    BtnM = tk.Button(FrameAn, text='Modificar',font=('Comic Sans MS', 15),bg='azure')
     BtnM.place(relx=.87,rely=.4,)
-    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Great Vibes', 15),bg='azure')
+    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Comic Sans MS', 15),bg='azure')
     BtnE.place(relx=.87,rely=.7)
-    BtnAt = tk.Button(FrameAn,text='Atras',font=('Great Vibes', 15),bg='azure',command=AtrasC)
+    BtnAt = tk.Button(FrameAn,text='Atras',font=('Comic Sans MS', 15),bg='azure',command=AtrasC)
     BtnAt.place(relx=.01,rely=.1)
     ###################################
     FrameRaza = tk.Frame(FondoC,bg='light gray')
@@ -578,19 +578,19 @@ def VGCa(event):
                             if row[0]=='La Mancha':
                                 d=d+1
                 if s>0:
-                    F1 = tk.Button(FrameRaza,text='Saanen',bg='azure',font=('Great Vibes', 15))
+                    F1 = tk.Button(FrameRaza,text='Saanen',bg='azure',font=('Comic Sans MS', 15))
                     F1.place(rely=.1,x=50,relwidth=.8,height=80)
                     F1.bind("<Button-1>", MostrarV0)
                 if z>0: 
-                    F2 = tk.Button(FrameRaza,text='Toggenburg',font=('Great Vibes', 15),bg='azure')
+                    F2 = tk.Button(FrameRaza,text='Toggenburg',font=('Comic Sans MS', 15),bg='azure')
                     F2.place(rely=.3,x=50,relwidth=.8,height=80)
                     F2.bind("<Button-1>", MostrarV1)
                 if c>0:
-                    F3 = tk.Button(FrameRaza,text='Alpina',font=('Great Vibes', 15),bg='azure')
+                    F3 = tk.Button(FrameRaza,text='Alpina',font=('Comic Sans MS', 15),bg='azure')
                     F3.place(rely=.5,x=50,relwidth=.8,height=80)
                     F3.bind("<Button-1>", MostrarV2)
                 if d>0:
-                    F4 = tk.Button(FrameRaza,text='La Mancha',font=('Great Vibes', 15),bg='azure')
+                    F4 = tk.Button(FrameRaza,text='La Mancha',font=('Comic Sans MS', 15),bg='azure')
                     F4.place(rely=.7,x=50,relwidth=.8,height=80)
                     F4.bind("<Button-1>", MostrarV3)
     def MostrarV0(event):
@@ -682,33 +682,33 @@ def VGCa(event):
     FrameAn = tk.Frame(FondoCa,bg='green3')
     FrameAn.place(relwidth=1,height=200)
 
-    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Great Vibes', 25))
+    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Comic Sans MS', 25))
     LRaza.place(relx=.1,rely=.3)
-    CoRaza = ttk.Combobox(FrameAn, values=['Saanen','Toggenburg','Alpina','La Mancha'],font=('Great Vibes', 25))
+    CoRaza = ttk.Combobox(FrameAn, values=['Saanen','Toggenburg','Alpina','La Mancha'],font=('Comic Sans MS', 25))
     CoRaza.place(relx=.1,rely=.5,width=200)
 
-    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Great Vibes', 25))
+    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Comic Sans MS', 25))
     LEdad.place(relx=.3,rely=.3)
-    InEdad = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InEdad = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InEdad.place(relx=.3,rely=.5,width=100)
 
-    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Great Vibes', 25))
+    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Comic Sans MS', 25))
     LPeso.place(relx=.5,rely=.3)
-    InPeso = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InPeso = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InPeso.place(relx=.5,rely=.5,width=100)
 
-    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Great Vibes', 25))
+    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Comic Sans MS', 25))
     LNum.place(relx=.7,rely=.3)
-    InNum = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InNum = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InNum.place(relx=.7,rely=.5,width=200)
     
-    BtnA = tk.Button(FrameAn, text='Agregar',font=('Great Vibes', 15),bg='azure', command=AnadirCa)
+    BtnA = tk.Button(FrameAn, text='Agregar',font=('Comic Sans MS', 15),bg='azure', command=AnadirCa)
     BtnA.place(relx=.87,rely=.15,)
-    BtnM = tk.Button(FrameAn, text='Modificar',font=('Great Vibes', 15),bg='azure')
+    BtnM = tk.Button(FrameAn, text='Modificar',font=('Comic Sans MS', 15),bg='azure')
     BtnM.place(relx=.87,rely=.4,)
-    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Great Vibes', 15),bg='azure')
+    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Comic Sans MS', 15),bg='azure')
     BtnE.place(relx=.87,rely=.7)
-    BtnAt = tk.Button(FrameAn,text='Atras',font=('Great Vibes', 15),bg='azure',command=AtrasCa)
+    BtnAt = tk.Button(FrameAn,text='Atras',font=('Comic Sans MS', 15),bg='azure',command=AtrasCa)
     BtnAt.place(relx=.01,rely=.1)
     ###################################
     FrameRaza = tk.Frame(FondoCa,bg='light gray')
@@ -801,23 +801,23 @@ def VGG(event):
                             if row[0]=='Sussex Clara':
                                 a=a+1
                 if s>0:
-                    F1 = tk.Button(FrameRaza,text='Leghorn Blanca',bg='azure',font=('Great Vibes', 15))
+                    F1 = tk.Button(FrameRaza,text='Leghorn Blanca',bg='azure',font=('Comic Sans MS', 15))
                     F1.place(rely=.03,x=50,relwidth=.8,height=80)
                     F1.bind("<Button-1>", MostrarV0)
                 if z>0: 
-                    F2 = tk.Button(FrameRaza,text='Rhode Island Roja',font=('Great Vibes', 15),bg='azure')
+                    F2 = tk.Button(FrameRaza,text='Rhode Island Roja',font=('Comic Sans MS', 15),bg='azure')
                     F2.place(rely=.23,x=50,relwidth=.8,height=80)
                     F2.bind("<Button-1>", MostrarV1)
                 if c>0:
-                    F3 = tk.Button(FrameRaza,text='New Hampshire',font=('Great Vibes', 15),bg='azure')
+                    F3 = tk.Button(FrameRaza,text='New Hampshire',font=('Comic Sans MS', 15),bg='azure')
                     F3.place(rely=.43,x=50,relwidth=.8,height=80)
                     F3.bind("<Button-1>", MostrarV2)
                 if d>0:
-                    F4 = tk.Button(FrameRaza,text='Cornish',font=('Great Vibes', 15),bg='azure')
+                    F4 = tk.Button(FrameRaza,text='Cornish',font=('Comic Sans MS', 15),bg='azure')
                     F4.place(rely=.63,x=50,relwidth=.8,height=80)
                     F4.bind("<Button-1>", MostrarV3)
                 if a>0:
-                    F5 = tk.Button(FrameRaza,text='Sussex Clara',font=('Great Vibes', 15),bg='azure')
+                    F5 = tk.Button(FrameRaza,text='Sussex Clara',font=('Comic Sans MS', 15),bg='azure')
                     F5.place(rely=.83,x=50,relwidth=.8,height=80)
                     F5.bind("<Button-1>", MostrarV4)
     def MostrarV0(event):
@@ -929,33 +929,33 @@ def VGG(event):
     FrameAn = tk.Frame(FondoGa,bg='green3')
     FrameAn.place(relwidth=1,height=200)
 
-    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Great Vibes', 25))
+    LRaza = tk.Label(FrameAn,text='Raza:',bg='green3',font=('Comic Sans MS', 25))
     LRaza.place(relx=.1,rely=.3)
     CoRaza = ttk.Combobox(FrameAn, values=['Leghorn Blanca','Rhode Island Roja','New Hampshire','Cornish','Sussex Clara'],font=('Great Vibes', 25))
     CoRaza.place(relx=.1,rely=.5,width=200)
 
-    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Great Vibes', 25))
+    LEdad = tk.Label(FrameAn, text='Edad:(meses)', bg='green3',font=('Comic Sans MS', 25))
     LEdad.place(relx=.3,rely=.3)
-    InEdad = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InEdad = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InEdad.place(relx=.3,rely=.5,width=100)
 
-    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Great Vibes', 25))
+    LPeso = tk.Label(FrameAn, text='Peso:(Kilos)', bg='green3',font=('Comic Sans MS', 25))
     LPeso.place(relx=.5,rely=.3)
-    InPeso = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InPeso = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InPeso.place(relx=.5,rely=.5,width=100)
 
-    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Great Vibes', 25))
+    LNum = tk.Label(FrameAn, text='Numero Oreja:', bg='green3',font=('Comic Sans MS', 25))
     LNum.place(relx=.7,rely=.3)
-    InNum = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InNum = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InNum.place(relx=.7,rely=.5,width=200)
     
-    BtnA = tk.Button(FrameAn, text='Agregar',font=('Great Vibes', 15),bg='azure',command=AnadirGa)
+    BtnA = tk.Button(FrameAn, text='Agregar',font=('Comic Sans MS', 15),bg='azure',command=AnadirGa)
     BtnA.place(relx=.87,rely=.15,)
-    BtnM = tk.Button(FrameAn, text='Modificar',font=('Great Vibes', 15),bg='azure')
+    BtnM = tk.Button(FrameAn, text='Modificar',font=('Comic Sans MS', 15),bg='azure')
     BtnM.place(relx=.87,rely=.4,)
-    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Great Vibes', 15),bg='azure')
+    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Comic Sans MS', 15),bg='azure')
     BtnE.place(relx=.87,rely=.7)
-    BtnAt = tk.Button(FrameAn,text='Atras',font=('Great Vibes', 15),bg='azure',command=AtrasGa)
+    BtnAt = tk.Button(FrameAn,text='Atras',font=('Comic Sans MS', 15),bg='azure',command=AtrasGa)
     BtnAt.place(relx=.01,rely=.1)
     ###################################
     FrameRaza = tk.Frame(FondoGa,bg='light gray')
@@ -1109,7 +1109,7 @@ def VCultivo():
 
     LNombre = tk.Label(FrameAn, text='Nombre:', bg='green3',font=('Comic Sans MS', 25))
     LNombre.place(relx=.3,rely=.3)
-    InNombre = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InNombre = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InNombre.place(relx=.3,rely=.5,width=200)
 
     LArea = tk.Label(FrameAn, text='Area de cultivo:(hectarea)', bg='green3',font=('Comic Sans MS', 25))
@@ -1176,14 +1176,14 @@ def VTotal():
     LIF = tk.Label(FondoRe,bg='green4')
     LIF.place(relheight=1,relwidth=1)
     #####################################
-    BtnAt = tk.Button(FondoRe,text='Atras',font=('Great Vibes', 15),bg='azure',command=AtrasRe)
+    BtnAt = tk.Button(FondoRe,text='Atras',font=('Comic Sans MS', 15),bg='azure',command=AtrasRe)
     BtnAt.place(relx=.01,rely=.01)
     ######################
 
     total = '$'+str(ProTot)
-    LT = tk.Label(FondoRe,text='Produccion Total de la granja',font=('Great Vibes', 50),bg='green4',anchor='center')
+    LT = tk.Label(FondoRe,text='Produccion Total de la granja',font=('Comic Sans MS', 50),bg='green4',anchor='center')
     LT.place(relwidth=1,rely=.1)
-    LTP = tk.Label(FondoRe,text=total ,font=('Great Vibes', 100),bg='green4',anchor='center')
+    LTP = tk.Label(FondoRe,text=total ,font=('Comic Sans MS', 100),bg='green4',anchor='center')
     LTP.place(relwidth=1,rely=.3)
     VPrincipal.mainloop()
 
@@ -1225,7 +1225,7 @@ def Vprincipal():
     ##################################################
     FrameHead = tk.Frame(VPrincipal, bg='light grey')
     FrameHead.place(x=0, y=0, relwidth=1, height=60)
-    FPL = tk.Label(FrameHead, text='Granja Ucundinamarca', font=('Great Vibes', 25), bg='light grey')
+    FPL = tk.Label(FrameHead, text='Granja Ucundinamarca', font=('Comic Sans MS', 25), bg='light grey')
     FPL.place(x=20, y=20)
 
     ##################################################
@@ -1239,7 +1239,7 @@ def Vprincipal():
     icul = ImageTk.PhotoImage(icul)
     CulL1 = tk.Label(FrameCul, image=icul, bg='azure')
     CulL1.place(x=0, y=50, width=290, height=290)
-    CulL2 = tk.Label(FrameCul, text='CULTIVOS', bg='azure', anchor='center', font=('Great Vibes', 25))
+    CulL2 = tk.Label(FrameCul, text='CULTIVOS', bg='azure', anchor='center', font=('Comic Sans MS', 25))
     CulL2.place(relwidth=1, rely=.7)
 
     FrameCul.bind("<Button-1>", VCul)
@@ -1256,7 +1256,7 @@ def Vprincipal():
     iGan = ImageTk.PhotoImage(iGan)
     GanL1 = tk.Label(FrameGan, image=iGan, bg='azure')
     GanL1.place(x=0, y=50, width=290, height=290)
-    GanL2 = tk.Label(FrameGan, text='GANADO', bg='azure', anchor='center', font=('Great Vibes', 25))
+    GanL2 = tk.Label(FrameGan, text='GANADO', bg='azure', anchor='center', font=('Comic Sans MS', 25))
     GanL2.place(relwidth=1, rely=.7)
 
     FrameGan.bind("<Button-1>", Vgan)
@@ -1273,7 +1273,7 @@ def Vprincipal():
     iTo = ImageTk.PhotoImage(iTo)
     ToL1 = tk.Label(FrameTo, image=iTo, bg='azure')
     ToL1.place(x=0, y=50, width=290, height=290)
-    ToL2 = tk.Label(FrameTo, text='REPORTE', bg='azure', anchor='center', font=('Great Vibes', 25))
+    ToL2 = tk.Label(FrameTo, text='REPORTE', bg='azure', anchor='center', font=('Comic Sans MS', 25))
     ToL2.place(relwidth=1, rely=.7)
 
     FrameTo.bind("<Button-1>", VTo)
