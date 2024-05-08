@@ -1104,27 +1104,27 @@ def VCultivo():
 
     LTipo = tk.Label(FrameAn,text='Tipo:',bg='green3',font=('Comic Sans MS', 25))
     LTipo.place(relx=.1,rely=.2)
-    CoTipo = ttk.Combobox(FrameAn, values=['Cereales','Leguminosas','Hortalizas','Tubérculos'],font=('Great Vibes', 25))
+    CoTipo = ttk.Combobox(FrameAn, values=['Cereales','Leguminosas','Hortalizas','Tubérculos'],font=('Comic Sans MS', 25))
     CoTipo.place(relx=.1,rely=.5,width=200)
 
-    LNombre = tk.Label(FrameAn, text='Nombre:', bg='green3',font=('Great Vibes', 25))
+    LNombre = tk.Label(FrameAn, text='Nombre:', bg='green3',font=('Comic Sans MS', 25))
     LNombre.place(relx=.3,rely=.3)
     InNombre = tk.Entry(FrameAn,font=('Great Vibes', 25))
     InNombre.place(relx=.3,rely=.5,width=200)
 
-    LArea = tk.Label(FrameAn, text='Area de cultivo:(hectarea)', bg='green3',font=('Great Vibes', 25))
+    LArea = tk.Label(FrameAn, text='Area de cultivo:(hectarea)', bg='green3',font=('Comic Sans MS', 25))
     LArea.place(relx=.5,rely=.3)
-    InArea = tk.Entry(FrameAn,font=('Great Vibes', 25))
+    InArea = tk.Entry(FrameAn,font=('Comic Sans MS', 25))
     InArea.place(relx=.5,rely=.5,width=150)
 
     
-    BtnA = tk.Button(FrameAn, text='Agregar',font=('Great Vibes', 15),bg='azure',command=AnadirCul)
+    BtnA = tk.Button(FrameAn, text='Agregar',font=('Comic Sans MS', 15),bg='azure',command=AnadirCul)
     BtnA.place(relx=.87,rely=.15,)
-    BtnM = tk.Button(FrameAn, text='Modificar',font=('Great Vibes', 15),bg='azure',command=modificar)
+    BtnM = tk.Button(FrameAn, text='Modificar',font=('Comic Sans MS', 15),bg='azure',command=modificar)
     BtnM.place(relx=.87,rely=.4,)
-    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Great Vibes', 15),bg='azure',command=eliminar)
+    BtnE = tk.Button(FrameAn, text='Eliminar',font=('Comic Sans MS', 15),bg='azure',command=eliminar)
     BtnE.place(relx=.87,rely=.7)
-    BtnAt = tk.Button(FrameAn,text='Atras',font=('Great Vibes', 15),bg='azure',command=AtrasCu)
+    BtnAt = tk.Button(FrameAn,text='Atras',font=('Comic Sans MS', 15),bg='azure',command=AtrasCu)
     BtnAt.place(relx=.01,rely=.1)
     ##############################
     FrameTab = tk.Frame(FondoCu,bg='azure')
